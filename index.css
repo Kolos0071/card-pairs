@@ -1,0 +1,71 @@
+.container {
+  max-width: 550px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.card-container {
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: -30px;
+
+}
+
+.card-wrapper {
+  margin-top: 30px;
+  padding: 15px;
+  background-image: url(card.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  transition: .3s;
+  border: 1px solid #cacaca;
+  border-radius: 10px;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: rotateY(180deg);
+  width: 80px;
+  height: 124px;
+  opacity: 0;
+
+}
+
+.card-wrapper:hover {
+  scale: 1.2;
+}
+
+
+.card-wrapper.reverse {
+  transform: rotateY(180deg);
+  transform-origin: center;
+  background-color: #cacaca;
+  background-image: none;
+}
+
+.card-wrapper.reverse .card {
+  opacity: 1;
+}
+
+
+.card-wrapper.match {
+  transform: rotateY(180deg);
+  transform-origin: center;
+  background-color: #cacaca;
+  background-image: none;
+}
+
+.card-wrapper.match .card  {
+  opacity: 1;
+}
+
+.replay-btn {
+  margin-top: 30px;
+  display: none;
+}
